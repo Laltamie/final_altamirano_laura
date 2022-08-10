@@ -3,10 +3,5 @@
     {"id":"2","nombre":"Calza","precio":"4000","img":"multimedia/img/producto-2.jpg"},
     {"id":"3","nombre":"Buzo","precio":"8000","img":"multimedia/img/producto-3.jpg"},
     {"id":"4","nombre":"Campera","precio":"10000","img":"multimedia/img/producto-4.jpg"},
-    {"id":"5","nombre":"Polera","precio":"3000","img":"multimedia/img/producto-5.jpg"},
-    {"id":"1","nombre":"Top","precio":"2000","img":"multimedia/img/producto-1.jpg"},
-    {"id":"2","nombre":"Calza","precio":"4000","img":"multimedia/img/producto-2.jpg"},
-    {"id":"3","nombre":"Buzo","precio":"8000","img":"multimedia/img/producto-3.jpg"},
-    {"id":"4","nombre":"Campera","precio":"10000","img":"multimedia/img/producto-4.jpg"},
     {"id":"5","nombre":"Polera","precio":"3000","img":"multimedia/img/producto-5.jpg"}
 ]
