@@ -1,12 +1,76 @@
 [
-    {"id":"1","nombre":"Top","precio":"2000","img":"multimedia/img/producto-1.jpg"},
-    {"id":"2","nombre":"Calza","precio":"4000","img":"multimedia/img/producto-2.jpg"},
-    {"id":"3","nombre":"Buzo","precio":"8000","img":"multimedia/img/producto-3.jpg"},
-    {"id":"4","nombre":"Campera","precio":"10000","img":"multimedia/img/producto-4.jpg"},
-    {"id":"5","nombre":"Polera","precio":"3000","img":"multimedia/img/producto-5.jpg"},
-    {"id":"1","nombre":"Top","precio":"2000","img":"multimedia/img/producto-1.jpg"},
-    {"id":"2","nombre":"Calza","precio":"4000","img":"multimedia/img/producto-2.jpg"},
-    {"id":"3","nombre":"Buzo","precio":"8000","img":"multimedia/img/producto-3.jpg"},
-    {"id":"4","nombre":"Campera","precio":"10000","img":"multimedia/img/producto-4.jpg"},
-    {"id":"5","nombre":"Polera","precio":"3000","img":"multimedia/img/producto-5.jpg"}
-]
+    {
+      
+      "id": 1,
+      "name": "Conjunto",
+      "precio": "30000",
+      "img": "./multimedia/producto-1.jpg"
+      
+    },
+    {
+        "id": 2,
+        "name": "Conjunto Primavera",
+        "precio": "35000",
+        "img": "./multimedia/producto-2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Vestido",
+        "precio": "25000",
+        "img": "./multimedia/producto-3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Sweater",
+        "precio": "18000",
+        "img": "./multimedia/producto-4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Top",
+        "precio": "9000",
+        "img": "./multimedia/producto-5.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Vestido Verano",
+        "precio": "50000",
+        "img": "./multimedia/producto-6.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Catsuit Verano",
+        "precio": "36000",
+        "img": "./multimedia/producto-7.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Camisa",
+        "precio": "13000",
+        "img": "./multimedia/producto-8.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Campera",
+        "precio": "11000",
+        "img": "./multimedia/producto-9.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Poncho",
+        "precio": "60000",
+        "img": "./multimedia/producto-10.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Conjunto Dep",
+        "precio": "31000",
+        "img": "./multimedia/producto-11.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Traje",
+        "precio": "80000",
+        "img": "./multimedia/producto-12.jpg"
+    }
+  ]

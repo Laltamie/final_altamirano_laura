@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>GEMINI</title>
-
 </head>
-<body> 
-    
-<!-- navegador -->
+<body>
+
+    <!-- navegador -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">GEMINI</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,93 +23,183 @@
               <a class="nav-link" href="./index.html">Inicio<span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/carrito.html">Carrito</a>
+              <button id="pagar" type="submit" class="btn btn-primary">Iniciar Sesion</button>
             </li>
           </ul>
         </div>
       </nav>
-<!-- navegador -->
+    <!-- navegador -->
 
-<header>
-  <div id="header-inicio" >
-    <p>Estilo es usar lo que te hace sentir bien!</p>
-  </div>
-</header>
+    <!-- header -->
+      <div class="container-header">
+        <h1>¡Tienda de ropa femenina con diseños exclusivo!</h1>
+        <hr>
+      </div>
+    <!-- header -->
 
-<main>
-  <section class="d-flex justify-content-center">
-    <div id="productos" class="row row-cols-1 row-cols-md-3 g-4 w-75 ">  
+    <!-- main -->
+    <div class="container">
+        <div class="conteiner-tabla">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col"></th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+                <tr id="carrito-compras">
+                    <th scope="row" colspan="5">¡Carrito Vacío!</th>
+                </tr>
+            </tfoot>
+        </table>
+        </div>
+        <div class="row" id="cards">
+        </div>
     </div>
-  </section>
-</main>
+    <!-- main -->
 
-<div id="botones">
-  <a href="./pages/carrito.html"><button id="verCarrito">Ver Carrito</button></a>
-</div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="formulario" class="col-md-12" action="">                                              
+                    <input required class="m-2 col-md-12 form-control-lg" type="text" name="Nombre" id="titular"  pattern="[a-zA-Z /s]{1,100}" placeholder="Nombre del titular de la tarjeta" title="Ingrese el nombre sin carácteres especiales (ej; *, &, #)">
+                    <input required class="m-2 col-md-12 form-control-lg" type="text" name="Apellido" id="titular"  pattern="[a-zA-Z /s]{1,100}" placeholder="Apellido del titular de la tarjeta" title="Ingrese el nombre sin carácteres especiales (ej; *, &, #)">
+                    <input required class="m-2 col-md-12 form-control-lg" type="text" inputmode="numeric" name="tarjeta" id="tarjeta" pattern="[0-9]{16}" placeholder="Números de la tarjeta" title="Ingrese los 16 numeros de la tarjeta sin espacios ni guiones.">
+                    <select required class="form-control-lg" name="mes" id="seleccionMes">
+                      <option disabled selected value="">Mes</option>
+                    </select>
+                    <select required class="form-control-lg" name="año" id="seleccionAnio">
+                      <option disabled selected value="">Año</option>
+                    </select>
+                    <input required class="m-2 col-md-4 form-control-lg" type="text" inputmode="numeric" minlength="3" maxlength="3" name="codigo" id="codigo" placeholder="XXX">
+                    <div id="" class="modal-footer">
+                      <p id="total"></p>
+                      <button id="pagar" type="submit" class="btn btn-primary">Pagar</button>                    
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </form> 
+              </div>
+          </div>
+        </div>
+      </div>
 
 
-<!-- footer -->
-  <footer class="text-center text-white" style="background-color: #f1f1f1;">
-    <!-- Grid container -->
-    <div class="container pt-4">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="https://www.facebook.com/" target="_blank"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-facebook-f"></i
-        ><img src="./multimedia/IMG/facebook.png"></a>
-  
-        <!-- Twitter -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="https://twitter.com/i/flow/login" target="_blank"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-twitter"></i
-        ><img src="./multimedia/IMG/twitter.png"></a>
 
-        <!-- Instagram -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="https://www.instagram.com/" target="_blank"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-instagram"></i
-        ><img src="./multimedia/IMG/instagram.png"></a>
-  
-        <!-- Whatsapp -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="https://web.whatsapp.com/" target="_blank"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-google"></i
-        ><img src="./multimedia/IMG/Whatsapp.png"></a>
-  
-        <!-- Gmail -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="https://accounts.google.com/ServiceLogin" target="_blank"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-linkedin"></i
-        ><img src="./multimedia/IMG/gmail.png"></a>
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
-  </footer>
- <!-- Footer -->
 
+    <template id="template-carrito">
+        <th scope="row" colspan="2">Total: </th>
+        <td>10</td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                Vaciar Carrito
+            </button>
+            <button class="btn btn-danger btn-sm" id="botonComprar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Comprar
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+    
+    <template id="template-producto">
+      <tr>
+        <th scope="row">id</th>
+        <td>Buzo</td>
+        <td>1</td>
+        <td>
+            <button class="btn btn-info btn-sm">
+                +
+            </button>
+            <button class="btn btn-danger btn-sm">
+                -
+            </button>
+        </td>
+        <td>$ <span>3000</span></td>
+      </tr>
+    </template>
+
+    <template id="template-card">
+        <div class="col-12 mb-2 col-md-4">
+            <div class="card">
+                <img src="" alt="" class="card-img-top" class="img-fluid" alt="Responsive image">
+                <div class="card-body">
+                    <h5>Titulo</h5>
+                    <p>Precio</p>
+                    <button class="btn btn-dark">Añadir al Carrito</button> 
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- footer -->
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.facebook.com/" target="_blank"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-facebook-f"></i
+            ><img src="./multimedia/facebook.png"></a>
+      
+            <!-- Twitter -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://twitter.com/i/flow/login" target="_blank"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-twitter"></i
+            ><img src="./multimedia/twitter.png"></a>
+    
+            <!-- Instagram -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.instagram.com/" target="_blank"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-instagram"></i
+            ><img src="./multimedia/instagram.png"></a>
+      
+            <!-- Whatsapp -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://web.whatsapp.com/" target="_blank"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-google"></i
+            ><img src="./multimedia/Whatsapp.png"></a>
+      
+            <!-- Gmail -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://accounts.google.com/ServiceLogin" target="_blank"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-linkedin"></i
+            ><img src="./multimedia/gmail.png"></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+    <!-- footer -->
+
+
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script src="./DOM_home.js"></script>
+    <script src="./JS/index.js"></script>
 </body>
 </html>
