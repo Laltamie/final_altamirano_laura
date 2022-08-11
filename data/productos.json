@@ -32,44 +32,44 @@
         "img": "./multimedia/producto-5.jpg"
     },
     {
-        "id": 4,
+        "id": 6,
         "name": "Vestido Verano",
         "precio": "50000",
         "img": "./multimedia/producto-6.jpg"
     },
     {
-        "id": 4,
+        "id": 7,
         "name": "Catsuit Verano",
         "precio": "36000",
         "img": "./multimedia/producto-7.jpg"
     },
     {
-        "id": 4,
+        "id": 8,
         "name": "Camisa",
         "precio": "13000",
         "img": "./multimedia/producto-8.jpg"
     },
     {
-        "id": 4,
+        "id": 9,
         "name": "Campera",
         "precio": "11000",
         "img": "./multimedia/producto-9.jpg"
     },
     {
-        "id": 4,
+        "id": 10,
         "name": "Poncho",
         "precio": "60000",
         "img": "./multimedia/producto-10.jpg"
     },
     {
-        "id": 4,
-        "name": "Conjunto Dep",
+        "id": 11,
+        "name": "Conjunto Deportivo",
         "precio": "31000",
         "img": "./multimedia/producto-11.jpg"
     },
     {
-        "id": 4,
-        "name": "Traje",
+        "id": 12,
+        "name": "Traje Red",
         "precio": "80000",
         "img": "./multimedia/producto-12.jpg"
     }

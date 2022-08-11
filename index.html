@@ -23,7 +23,7 @@
               <a class="nav-link" href="./index.html">Inicio<span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-              <button id="pagar" type="submit" class="btn btn-primary">Iniciar Sesion</button>
+              <button id="pagar" type="submit" type="button" class="btn btn-light">Iniciar Sesion</button>
             </li>
           </ul>
         </div>
@@ -31,7 +31,7 @@
     <!-- navegador -->
 
     <!-- header -->
-      <div class="container-header">
+      <div class="container-header" >
         <h1>¡Tienda de ropa femenina con diseños exclusivo!</h1>
         <hr>
       </div>
@@ -39,6 +39,8 @@
 
     <!-- main -->
     <div class="container">
+      <div class="row" id="cards">
+      </div>
         <div class="conteiner-tabla">
         <table class="table">
             <thead>
@@ -57,8 +59,6 @@
                 </tr>
             </tfoot>
         </table>
-        </div>
-        <div class="row" id="cards">
         </div>
     </div>
     <!-- main -->
@@ -133,7 +133,7 @@
                 <div class="card-body">
                     <h5>Titulo</h5>
                     <p>Precio</p>
-                    <button class="btn btn-dark">Añadir al Carrito</button> 
+                    <button type="button" class="btn btn-success">Añadir al Carrito</button> 
                 </div>
             </div>
         </div>
