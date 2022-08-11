@@ -2,7 +2,6 @@ const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 const verCarrito = document.getElementById("verCarrito");
 const botones = document.getElementById("botones");
 const seccionDeProductos = document.getElementById("productos");
-const seccionPageProductos = document.getElementById("pageProductos");
 // const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor)};
 
 
