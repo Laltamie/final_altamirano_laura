@@ -6,13 +6,14 @@ body{
 }
 
 .navbar-brand {
-    color: #8b6709 !important;
+    color: #033d05 !important;
+    font-weight: 500;
 }
 .nav-link {
-    color: #8b6709 !important;
+    color: #0aad2d !important;
 }
 .btn-light {
-    color: #8b6709 !important;
+    color: #0aad2d !important;
 }
 
 .container-header{
@@ -228,6 +229,17 @@ body{
 
 .formulario_registro{
     display: none;
+}
+
+#sesion a {
+    color: #0aad2d !important;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#sesion {
+    margin: 0px;
+    padding: 2px;
 }
 
 /* responsive */
