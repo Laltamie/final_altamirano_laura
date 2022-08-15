@@ -62,10 +62,8 @@ const mostrarCards = data => {
 
 // agregar productos al carrito
 const addCarrito = e => {
-    if(e.target.classList.contains('btn-success')){
-        setCarrito(e.target.parentElement);
-    }; 
-    e.stopPropagation();
+    e.target.classList.contains('btn-success') && setCarrito(e.target.parentElement)
+    e.stopPropagation()
 };
 
 // dibujar carrito

@@ -1,15 +1,14 @@
 loguin = localStorage.getItem("inicio-sesion")
 boton = document.getElementById('btn_enviar')
 
-if(!loguin ){
-    capturarDatosSesion();
-}
+
+!loguin && capturarDatosSesion();
 
 function capturarDatosSesion(){
-
+    
     let emailSesion = document.getElementById("email_sesion").value;
     let pass_Sesion = document.getElementById("pass_sesion").value;
-
+    
     emailSesion = document.getElementById("email_sesion").value;
     pass_Sesion = document.getElementById("pass_sesion").value;
     
@@ -35,7 +34,7 @@ function capturarDatosRegistro(){
     localStorage.setItem("pass_registro", passRegistro);
 }
 
-// 
+ 
 
 
 
