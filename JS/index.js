@@ -23,6 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 cards.addEventListener('click', e => {
     addCarrito(e);
+    Swal.fire({
+        title: "Producto Agregado",
+        confirmButtonText: "Aceptar",
+        icon: "success",
+        background: '#c2f7e5'
+    })
 });
 
 items.addEventListener('click', e => {
