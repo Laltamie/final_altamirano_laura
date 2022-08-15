@@ -118,6 +118,7 @@ body{
     padding: 20px;
     margin: auto;
     margin-top: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* contenedor gral */
@@ -180,6 +181,8 @@ body{
     position: relative;
     top: -185px;
     left: 10px;
+
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
 } 
 
 .container_login_registro form{
@@ -264,6 +267,4 @@ body{
     .container_login_registro form{
         position: relative;
     }
-
-
 }

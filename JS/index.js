@@ -1,3 +1,4 @@
+// declaración de variables
 const container = document.getElementById("productos_container");
 const formulario = document.getElementById("formulario");
 const anioActual = new Date().getFullYear();
@@ -28,9 +29,7 @@ items.addEventListener('click', e => {
     btnAccion(e);
 });
 
-
-
-
+// trae productos del json
 const fetchDatos = async () => {
     try{
         const resp = await fetch('data/productos.json')
@@ -41,6 +40,7 @@ const fetchDatos = async () => {
     }
 };
 
+// mostrar productos en una grilla
 const mostrarCards = data => {
     data.forEach(producto => {
         templateCard.querySelector('h5').textContent = producto.name
@@ -54,6 +54,7 @@ const mostrarCards = data => {
     cards.appendChild(fragment);
 };
 
+// agregar productos al carrito
 const addCarrito = e => {
     if(e.target.classList.contains('btn-success')){
         setCarrito(e.target.parentElement);
@@ -61,6 +62,7 @@ const addCarrito = e => {
     e.stopPropagation();
 };
 
+// dibujar carrito
 const setCarrito = objeto => {
     const producto = {
         id: objeto.querySelector('.btn-success').dataset.id,
@@ -76,6 +78,7 @@ const setCarrito = objeto => {
     verCarrito();
 };
 
+// mostrar carrito
 const verCarrito = () => {
 items.innerHTML = '';
     Object.values(carrito).forEach(producto => {
@@ -94,6 +97,7 @@ items.innerHTML = '';
     localStorage.setItem('carrito', JSON.stringify(carrito))
 };
 
+// aumentar y dusminuir productos
 const verCarritoCompras = () => {
     carritoCompras.innerHTML = '';
     if(Object.keys(carrito).length === 0) {
@@ -102,7 +106,6 @@ const verCarritoCompras = () => {
         `
         return;
     }
-
     const nCantidad = Object.values(carrito).reduce((acc, { cantidad }) => acc + cantidad, 0)
     const nPrecio = Object.values(carrito).reduce((acc, { cantidad, precio }) => acc + cantidad * precio, 0)
 
@@ -120,6 +123,7 @@ const verCarritoCompras = () => {
     });
 };
 
+// accionar de los botones
 const btnAccion = e => {
     // aumentar
     if(e.target.classList.contains('btn-info')){
@@ -166,7 +170,7 @@ formulario.addEventListener("submit", (e) => {
     let clave = form.children[4].value;
 
     carrito = {};
-    mostrarCarrito();
+    verCarrito();
 
 });
 
